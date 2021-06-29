@@ -1,0 +1,22 @@
+{
+  "name": "face",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "postcss ./src/styles.css -o  ./public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https:github.com/alok1929/face"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^10.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
