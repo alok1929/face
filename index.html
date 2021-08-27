@@ -1,59 +1,81 @@
 <html>
+
 <head>
-   <link rel="stylesheet" href="styles.css"> 
-   <script src="https://use.fontawesome.com/c29542fdfc.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/c29542fdfc.js"></script>
 </head>
-     <nav class="font-extrabold text-black-400  bg-blue-800 px-6">
-        <div class="inline-block text-sm px-4 py-2 text-2xl ">
-            FACE 
-        </div>
-    
- 
+<nav class="font-extrabold text-black-400  bg-blue-800 px-6">
+    <div class="inline-block text-sm px-4 py-2 text-2xl ">
+        FACE
     </div>
 
-     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-         
-         </div>
-         </nav>
+
+    </div>
+
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+
+    </div>
+</nav>
 
 <!--content-->
 <div class="flex bg-blue-400  space-x-20 w-100 px-20 py-10 space-x-48  ">
-    
 
-<div class=" inline-block bg-black text-blue-400 w-60 space-x-20 rounded-md shadow-2xl p-6 flex self-center">
-    Welcome Alok 
-</div>
-<br>
-<div class="inline-block bg-black  text-blue-400 w-60 rounded-md space-x-20 shadow-2xl p-4 flex ">
-     Time  <br> <div class="text-yellow-900 text-3xl px-2">8:30</div>
-</div>
-<div class="inline-block bg-black text-blue-400 w-60 rounded-md  shadow-2xl p-5 flex  flex self-center text-2xl">
-    weather
-</div>
-<div class="animate-bounce delay-1000 inline-block bg-black w-60 rounded-md shadow-2xl px-6 py-4 text-blue-400  space-x-10 ">Start Pomodoro <div class="inline-block text-2xl">⏱</div></div>
+
+    <div class=" inline-block bg-black text-blue-400 w-60  space-x-48 rounded-md shadow-2xl p-6 flex self-center">
+        Welcome Alok
+    </div>
+    <br>
+    <div class="inline-block bg-black font-size-md text-blue-400 w-60 rounded-md space-x-20 shadow-2xl p-4 flex ">
+        Time: <br>
+        <div class="text-yellow-900 text-3xl px-2">
+        <h2 id="displayDateTime"></h2>
+        </div>
+        <script>
+            var today = new Date();
+            var day = today.getDay();
+            var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+            var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() ;
+            var dateTime =  time;
+
+            document.getElementById("displayDateTime").innerHTML = dateTime;
+
+        </script>
+    </div>
+    <div class="inline-block bg-black text-blue-400 w-60 rounded-md  shadow-2xl p-5 flex  flex self-center text-2xl">
+        <script>
+            var currtime = Date.now();
+            console.log(currdatetime);
+        </script>
+        weather
+    </div>
+    <div
+        class="animate-bounce delay-1000 inline-block bg-black w-60 rounded-md shadow-2xl px-6 py-4 text-blue-400  space-x-10 ">
+        Start Pomodoro <div class="inline-block text-2xl">⏱</div>
+    </div>
 </div>
 
 
 
 <!--card links-->
 <div class="flex flex-wrap space-x-48 p-20 px-80 overflow-hidden font-bold  ">
-
     <!--card 1-->
-<div class=" hover:bg-blue-500 bg-blue-100 p-10 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
-     <a href="https://youtube.com">youtube</a>
-</div>
+    <div class=" hover:bg-blue-500 bg-blue-100 p-10 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
+        <a href="https://youtube.com">youtube</a>
+    </div>
 
-<!--card 2-->
+    <!--card 2-->
 
-<div class="hover:bg-blue-500 flex flex-col bg-blue-100 p-10 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
-<a href="open.spotify.com">spotify</a>
-</div>
+    <div
+        class="hover:bg-blue-500 flex flex-col bg-blue-100 p-10 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
+        <a href="open.spotify.com">spotify</a>
+    </div>
 
-<!--card 3-->
+    <!--card 3-->
 
-<div class="hover:bg-blue-500 bg-blue-100 p-10 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
-    <a href="https://classroom.google.com">Classroom</a>
-</div>
+    <div class="hover:bg-blue-500 bg-blue-100 p-10 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
+        <a href="https://classroom.google.com">Classroom</a>
+    </div>
 </div>
 
 <!--ROW 2-->
@@ -61,36 +83,39 @@
 <div class="  flex-1 flex flex-wrap items-center space-x-48 py-10 px-80 overflow-hidden font-bold ">
     <!--card 4-->
 
-<div class="hover:bg-blue-500 bg-blue-100 space-x-10 py-6 px-6 overflow-hidden inline-block  rounded-2xl text-blue-900 shadow-2xl">
-    <a href="https://physicsgalaxy.com/home">Physics-Galaxy</a>
-</div>
+    <div
+        class="hover:bg-blue-500 bg-blue-100 space-x-10 py-6 px-6 overflow-hidden inline-block  rounded-2xl text-blue-900 shadow-2xl">
+        <a href="https://physicsgalaxy.com/home">Physics-Galaxy</a>
+    </div>
 
-<!--card 5-->
+    <!--card 5-->
 
-<div class="hover:bg-blue-500 bg-blue-100 space-x-10 px-10 w-100 py-6 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
-    <a href="https://notion.so">Notion</a>
-</div>
+    <div
+        class="hover:bg-blue-500 bg-blue-100 space-x-10 px-10 w-100 py-6 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
+        <a href="https://notion.so">Notion</a>
+    </div>
 
-<!--card 6 -->
+    <!--card 6 -->
 
-<div class="hover:bg-blue-500 bg-blue-100 space-x-10 px-10 py-6 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
-    <a href="https://keybr.com">Typing Prac</a>
-</div>
+    <div
+        class="hover:bg-blue-500 bg-blue-100 space-x-10 px-10 py-6 overflow-hidden inline-block rounded-2xl text-blue-900 shadow-2xl">
+        <a href="https://keybr.com">Typing Prac</a>
+    </div>
 </div>
 
 <!--footer-->
-  
- <div class="container mx-auto px-6 overflow-hidden ">
-        <div class="mt-12 border-t-2 border-gray-300 flex flex-row items-center ">
-            <div class="sm:w-2/3 text-center px-6 py-6">
-                <p class="text-sm text-blue-700 font-bold mb-2">
-                    Contribute to <a href="https://github.com/alok1929/face">
-                     Github
-                     </a>
-                </p>
-            
-            </div>
-            <div class="font-grey-900 px-6">
+
+<div class="container mx-auto px-6 overflow-hidden ">
+    <div class="mt-12 border-t-2 border-gray-300 flex flex-row items-center ">
+        <div class="sm:w-2/3 text-center px-6 py-6">
+            <p class="text-sm text-blue-700 font-bold mb-2">
+                Contribute to <a href="https://github.com/alok1929/face">
+                    Github
+                </a>
+            </p>
+
+        </div>
+        <div class="font-grey-900 px-6">
             By Alok Hegde
         </div>
 

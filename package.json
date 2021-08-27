@@ -16,7 +16,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "autoprefixer": "^10.2.6",
+    "current-time": "^1.0.1",
+    "liveserver": "^0.1.20",
+    "node-fetch": "^2.6.1",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.4"
+    "request": "^2.88.2",
+    "tailwindcss": "^2.2.4",
+    "yargs": "^17.1.1"
   }
 }
